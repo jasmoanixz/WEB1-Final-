@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SZA — Artist Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" onclick="showPage('home')">SZA / Portfolio</a>
+  <ul class="nav-links">
+    <li><a id="nav-home"    onclick="showPage('home')">Home</a></li>
+    <li><a id="nav-about"   onclick="showPage('about')">About</a></li>
+    <li><a id="nav-music"   onclick="showPage('music')">Music</a></li>
+    <li><a id="nav-awards"  onclick="showPage('awards')">Awards</a></li>
+    <li><a id="nav-connect" onclick="showPage('connect')">Connect</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════
+     HOME PAGE
+══════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO with image -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-tag">Singer &nbsp;·&nbsp; Songwriter &nbsp;·&nbsp; R&amp;B / Neo-Soul</p>
+      <h1 class="hero-name">S<em>Z</em>A</h1>
+      <p class="hero-sub">Solána Imani Rowe — A voice that lives at the intersection of vulnerability and strength.</p>
+      <div class="hero-btns">
+        <button class="hero-btn" onclick="showPage('music')">Explore Discography</button>
+        <button class="hero-btn outline" onclick="showPage('about')">About SZA</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Real public photo via Wikimedia Commons -->
+      <img
+        class="hero-img"
+        src="https://i.pinimg.com/originals/6d/fb/58/6dfb58da5daf8c287a02b50af52b3256.gif"
+        alt="SZA at the 2018 Grammy Awards"
+        onerror="this.parentElement.style.background='linear-gradient(135deg,#1a0a2e,#3d1a6e,#6b35a0)';this.style.display='none'"
+      />
+      <div class="hero-img-overlay"></div>
+      <div class="hero-badge">
+        <span>Grammy&nbsp;·&nbsp;Winner&nbsp;·&nbsp;R&amp;B&nbsp;·&nbsp;Soul&nbsp;·&nbsp;Artist&nbsp;·&nbsp;</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll">Scroll to explore</div>
+  </section>
+
+  <!-- Quick nav strip -->
+  <div class="home-strip">
+    <div class="strip-item" onclick="showPage('about')">
+      <span class="strip-num">01</span>
+      <span class="strip-title">About</span>
+      <span class="strip-desc">Her story &amp; journey</span>
+    </div>
+    <div class="strip-item" onclick="showPage('music')">
+      <span class="strip-num">02</span>
+      <span class="strip-title">Music</span>
+      <span class="strip-desc">Albums &amp; top tracks</span>
+    </div>
+    <div class="strip-item" onclick="showPage('awards')">
+      <span class="strip-num">03</span>
+      <span class="strip-title">Awards</span>
+      <span class="strip-desc">Grammys &amp; accolades</span>
+    </div>
+    <div class="strip-item" onclick="showPage('connect')">
+      <span class="strip-num">04</span>
+      <span class="strip-title">Connect</span>
+      <span class="strip-desc">Follow the journey</span>
+    </div>
+  </div>
+
+  <!-- Featured / Who is SZA -->
+  <div class="home-featured">
+    <div>
+      <div class="feat-label">Who is SZA</div>
+      <h2 class="feat-title">A Generation's <em>Voice</em></h2>
+      <p class="feat-body">
+        Born Solána Imani Rowe in Maplewood, New Jersey, SZA redefined what R&amp;B could be. Equal parts vulnerable and fierce, her music pulls from personal heartbreak, spiritual searching, and an unapologetic femininity that resonates across generations.
+      </p>
+      <p class="feat-body">
+        From the raw intimacy of <em>CTRL</em> to the sweeping ambition of <em>SOS</em> — the longest-running #1 album by a female artist in Billboard 200 history — she has cemented her place as one of the defining voices of her era.
+      </p>
+      <button class="feat-link" onclick="showPage('about')">Read Full Biography &nbsp;→</button>
+    </div>
+    <div class="feat-right">
+      <div class="feat-stat-row">
+        <div class="feat-stat">
+          <div class="feat-stat-num">9+</div>
+          <div class="feat-stat-label">Grammy Nominations</div>
+        </div>
+        <div class="feat-stat">
+          <div class="feat-stat-num">2×</div>
+          <div class="feat-stat-label">Grammy Winner</div>
+        </div>
+        <div class="feat-stat">
+          <div class="feat-stat-num">35M</div>
+          <div class="feat-stat-label">Monthly Listeners</div>
+        </div>
+        <div class="feat-stat">
+          <div class="feat-stat-num">#1</div>
+          <div class="feat-stat-label">Longest Running Album</div>
+        </div>
+      </div>
+      <div class="feat-quote-card">
+        <p class="feat-quote-text">"I feel like my music is a confession. Every song is a piece of something I've been afraid to say out loud."</p>
+        <span class="feat-quote-src">SZA — Interview, 2023</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest Release Banner -->
+  <div class="release-banner">
+    <div class="release-left">
+      <div class="release-cover">
+        <img class= "s" src="https://i.pinimg.com/736x/91/60/f2/9160f28446172c196cff75add6341049.jpg" alt="">
+      </div>
+      <div>
+        <div class="release-label">Latest Album</div>
+        <div class="release-name">SOS</div>
+        <div class="release-meta">Released Dec 9, 2022 &nbsp;·&nbsp; 23 Tracks &nbsp;·&nbsp; TDE / RCA Records</div>
+      </div>
+    </div>
+    <div class="release-btns">
+      <a class="release-btn filled" href="https://open.spotify.com/album/4Mzb7FDNsJjRGWlw6Cq8hF" target="_blank" rel="noopener">▶ &nbsp;Stream Now</a>
+      <button class="release-btn ghost" onclick="showPage('music')">View All Albums</button>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="gallery-header">
+      <div>
+        <div class="feat-label" style="margin-bottom:0.8rem">Visual World</div>
+        <h2 class="gallery-title">Photo <em>Gallery</em></h2>
+      </div>
+      <span class="gallery-subtitle">Click to enlarge</span>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="g-item g1" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/6c/c2/c4/6cc2c434d9dc5ea61cfa49d34ff5067a.jpg"
+             alt="SZA at the 2018 Grammys"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">Grammy Awards 2018</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">Grammy Awards — 2018</span></div>
+      </div>
+
+      <div class="g-item g2" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/d2/ac/8d/d2ac8db3b6bf839e16d450a013d7aaa2.jpg"
+             alt="SZA at Coachella 2017"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">Coachella 2017</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">Coachella — 2017</span></div>
+      </div>
+
+      <div class="g-item g3" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/46/7a/28/467a28a253b819e4ef4e5aca2b178d65.jpg"
+             alt="SZA SOS Tour"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">SOS Tour</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">SOS World Tour — 2023</span></div>
+      </div>
+
+      <div class="g-item g4" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/b8/3e/69/b83e6900bfdd236f2a408377b5364da0.jpg"
+             alt="SZA House of Blues Chicago"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">House of Blues — 2022</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">House of Blues — Chicago 2022</span></div>
+      </div>
+
+      <div class="g-item g5" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/1200x/95/3b/d1/953bd17da0114a5a1c704ca55cdb6482.jpg"
+             alt="SZA Grammy 2023"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">Grammy Awards 2023</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">Grammy Awards — 2023</span></div>
+      </div>
+
+      <div class="g-item g6" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/3f/e7/51/3fe751fda0622234cca93c31909b4b3d.jpg"
+             alt="SZA portrait"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">Portrait — 2018</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">Portrait — 2018</span></div>
+      </div>
+
+      <div class="g-item g7" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/83/01/cc/8301cc8859cedf490811c8b87bbc89ea.jpg"
+             alt="SZA on stage"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">On Stage</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">Live on Stage — 2023</span></div>
+      </div>
+
+      <div class="g-item g8" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/a8/79/aa/a879aa153aa59172996001bfa520209f.jpg"
+             alt="SZA performing"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">Coachella Performance</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">Performing at Coachella</span></div>
+      </div>
+
+      <div class="g-item g9" onclick="openLightbox(this)">
+        <img src="https://i.pinimg.com/736x/d8/4b/7a/d84b7ade23c10db7b6cf9ee765f57235.jpg"
+             alt="SZA live"
+             onerror="this.style.display='none'"/>
+        <div class="g-placeholder"><span class="g-icon">✦</span><span class="g-placeholder-text">Live Performance</span></div>
+        <div class="g-item-overlay"><span class="g-item-caption">Live — Chicago 2022</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Tracks on Home -->
+  <div class="home-tracks">
+    <div class="ht-inner">
+      <div class="ht-header">
+        <h2 class="ht-title">Popular <em>Tracks</em></h2>
+        <button class="ht-more" onclick="showPage('music')">See All Music →</button>
+      </div>
+      <div class="ht-grid">
+        <a class="ht-item" href="https://open.spotify.com/track/0q7GRMJEdOnCFiQHJQXdiL" target="_blank" rel="noopener">
+          <span class="ht-num">01</span>
+          <div class="ht-dot ht-dot-sos">
+            <img class="s" src="https://i.pinimg.com/1200x/6e/c1/fb/6ec1fb43285386d850f94e41ca7f2049.jpg" alt="">
+          </div>
+          <div class="ht-info"><div class="ht-name">Kill Bill</div><div class="ht-meta">SOS · 2022</div></div>
+          <span class="ht-dur">2:33</span>
+        </a>
+        <a class="ht-item" href="https://open.spotify.com/track/0MoGKQJ4HFyKJGmGm6kLV8" target="_blank" rel="noopener">
+          <span class="ht-num">02</span>
+          <div class="ht-dot ht-dot-sg">
+            <img class="s" src="https://i.pinimg.com/1200x/0a/e2/09/0ae20923c372768058244213dfdc90a9.jpg" alt="">
+          </div>
+          <div class="ht-info"><div class="ht-name">Good Days</div><div class="ht-meta">Single · 2020</div></div>
+          <span class="ht-dur">4:39</span>
+        </a>
+        <a class="ht-item" href="https://open.spotify.com/track/4BoRxNiDDTCYkYMbF68rak" target="_blank" rel="noopener">
+          <span class="ht-num">03</span>
+          <div class="ht-dot ht-dot-sos">
+            <img class="s" src="https://i.pinimg.com/736x/be/3c/6c/be3c6c12fbadfabc4a73182d15d797a4.jpg" alt="">
+          </div>
+          <div class="ht-info"><div class="ht-name">Snooze</div><div class="ht-meta">SOS · 2022</div></div>
+          <span class="ht-dur">3:21</span>
+        </a>
+        <a class="ht-item" href="https://open.spotify.com/track/2lmqSTBjSIvheMufAQkRlK" target="_blank" rel="noopener">
+          <span class="ht-num">04</span>
+          <div class="ht-dot ht-dot-ctrl">
+            <img class="s" src="https://i.pinimg.com/736x/e3/29/c8/e329c84df03e118258de55f574200e57.jpg" alt="">
+          </div>
+          <div class="ht-info"><div class="ht-name">The Weekend</div><div class="ht-meta">CTRL · 2017</div></div>
+          <span class="ht-dur">3:24</span>
+        </a>
+        <a class="ht-item" href="https://open.spotify.com/track/4yzq6wKoCILMceKdKpgZJV" target="_blank" rel="noopener">
+          <span class="ht-num">05</span>
+          <div class="ht-dot ht-dot-sos">
+            <img class="s" src="https://i.pinimg.com/736x/d2/ac/8d/d2ac8db3b6bf839e16d450a013d7aaa2.jpg" alt="">
+          </div>
+          <div class="ht-info"><div class="ht-name">Shirt</div><div class="ht-meta">SOS · 2022</div></div>
+          <span class="ht-dur">3:35</span>
+        </a>
+        <a class="ht-item" href="https://open.spotify.com/track/7FIWzUmTHqGlfKyQmOHfaH" target="_blank" rel="noopener">
+          <span class="ht-num">06</span>
+          <div class="ht-dot ht-dot-ctrl">
+            <img class="s" src="https://i.pinimg.com/736x/a3/ae/36/a3ae36ca80721c09fad7b753d793f11f.jpg" alt="">
+          </div>
+          <div class="ht-info"><div class="ht-name">Drew Barrymore</div><div class="ht-meta">CTRL · 2017</div></div>
+          <span class="ht-dur">4:17</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Press Quotes -->
+  <section class="press-section">
+    <div class="feat-label">Critical Acclaim</div>
+    <h2 class="feat-title" style="margin-bottom:0">What the <em>World</em> Says</h2>
+    <div class="press-grid">
+      <div class="press-card">
+        <p class="press-text">SOS is a masterwork — a 23-track odyssey that manages to feel both sprawling and intimate, a testament to an artist fully in command of her powers.</p>
+        <span class="press-source">Pitchfork — Best New Music</span>
+      </div>
+      <div class="press-card">
+        <p class="press-text">SZA has always been one of the most compelling voices in R&amp;B, but with SOS she transcends the genre entirely and enters the realm of the genuinely extraordinary.</p>
+        <span class="press-source">Rolling Stone — ★★★★½</span>
+      </div>
+      <div class="press-card">
+        <p class="press-text">Fearless, confessional, and endlessly listenable. SZA has crafted the defining female album of the decade — and she makes it sound effortless.</p>
+        <span class="press-source">The Guardian — Album of the Year</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <blockquote class="quote-text">"I am not a concept. I am not a problem to be solved. I am the feeling in the room before the words come."</blockquote>
+    <p class="quote-source">SZA — On her artistry</p>
+  </section>
+
+</div><!-- end home -->
+
+<!-- ══ ABOUT ══ -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="page-hero-label">The Artist</div>
+    <h1 class="page-hero-title">Solána <em>Imani</em> Rowe</h1>
+  </div>
+  <div class="about-body">
+    <div class="about-visual">
+      <div class="about-frame">
+        <div class="about-frame-inner"><span class="about-initials">S.I.R</span>
+          <img class="about-image" src="https://i.pinimg.com/736x/ce/7d/ed/ce7dedc0aed1613dce0da70fdc3220bc.jpg" alt="SZA">
+        </div>
+      </div>
+      <div class="about-badge">Grammy<br/>Winner<br/>2024</div>
+    </div>
+    <div>
+      <div class="section-label">Biography</div>
+      <h2 class="about-title">An Artist <em>Unfiltered</em></h2>
+      <p class="about-text">Born November 8, 1989, in Maplewood, New Jersey, SZA grew up between the suburbs and the soul of New York City. Raised in a Muslim household with a diverse musical upbringing, she developed an intimate relationship with sound long before she ever stepped into a studio.</p>
+      <p class="about-text">Her artistry defies simple categorization — weaving R&amp;B, soul, indie, and hip-hop into something undeniably her own. From her early EPs to the critically acclaimed <em>CTRL</em> and <em>SOS</em>, SZA has built one of the most resonant catalogs in contemporary music.</p>
+      <p class="about-text">A former gymnastics competitor and marine biology student, her intellectual curiosity and emotional depth permeate every lyric she writes. She signed to Top Dawg Entertainment in 2013 — the label's first female signee.</p>
+      <div class="about-stats">
+        <div><span class="stat-num">9+</span><span class="stat-label">Grammy Nominations</span></div>
+        <div><span class="stat-num">3</span><span class="stat-label">Studio Albums</span></div>
+        <div><span class="stat-num">35M+</span><span class="stat-label">Monthly Listeners</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="about-timeline">
+    <div class="section-label">Timeline</div>
+    <div class="timeline-list">
+      <div class="timeline-item"><div class="tl-year">1989</div><div><div class="tl-event">Born in Maplewood, New Jersey</div><div class="tl-detail">November 8 — Solána Imani Rowe enters the world</div></div></div>
+      <div class="timeline-item"><div class="tl-year">2012</div><div><div class="tl-event">Releases debut EP <em>See.SZA.Run</em></div><div class="tl-detail">Self-released — her first steps in music</div></div></div>
+      <div class="timeline-item"><div class="tl-year">2013</div><div><div class="tl-event">Signs to Top Dawg Entertainment</div><div class="tl-detail">First and only female signee on the TDE roster</div></div></div>
+      <div class="timeline-item"><div class="tl-year">2014</div><div><div class="tl-event">Releases EP <em>Z</em></div><div class="tl-detail">Features Chance the Rapper and Isaiah Rashad</div></div></div>
+      <div class="timeline-item"><div class="tl-year">2017</div><div><div class="tl-event">Debut album <em>CTRL</em> drops</div><div class="tl-detail">Critically acclaimed — multiple Grammy nominations</div></div></div>
+      <div class="timeline-item"><div class="tl-year">2022</div><div><div class="tl-event">Releases <em>SOS</em></div><div class="tl-detail">Debuts at #1 — longest #1 album by a woman in Billboard history</div></div></div>
+      <div class="timeline-item"><div class="tl-year">2024</div><div><div class="tl-event">Wins Grammy for Best R&amp;B Song</div><div class="tl-detail">"Shirt" wins; SOS also wins Best Progressive R&amp;B Album</div></div></div>
+    </div>
+  </div>
+  <section class="quote-section">
+    <blockquote class="quote-text">"I am not a concept. I am not a problem to be solved. I am the feeling in the room before the words come."</blockquote>
+    <p class="quote-source">SZA — On her artistry</p>
+  </section>
+</div>
+
+<!-- ══ MUSIC ══ -->
+<div class="page" id="page-music">
+  <div class="page-hero">
+    <div class="page-hero-label">Discography</div>
+    <h1 class="page-hero-title">The <em>Albums</em></h1>
+  </div>
+  <div class="music-body">
+    <div class="albums-grid">
+      <a class="album-card" href="https://open.spotify.com/album/76290XdXVF9rPzGdNRWdCh?si=uDD-nwKbQXWX_X5WtiR92w" target="_blank" rel="noopener">
+        <div class="album-bg album-bg-ctrl">
+          <img class="s" src="https://i.pinimg.com/1200x/09/9d/24/099d24c0c281b8afa917848d38d0338c.jpg" alt="">
+        </div><div class="album-pattern"></div>
+        <div class="album-card-label">Album 001</div>
+        <div class="album-center-text"><span class="album-roman">I</span></div>
+        <div class="album-overlay"><span class="album-overlay-btn">▶ Listen on Spotify</span></div>
+        <div class="album-info"><div class="album-year">2017</div><div class="album-name">CTRL</div><div class="album-tracks">14 Tracks · TDE / RCA Records</div></div>
+      </a>
+      <a class="album-card" href="https://open.spotify.com/album/6FKP2O0oOvZlDkF0gyTjiJ?si=SE1jcFIsSYCv2Ux_u0PNoQ" target="_blank" rel="noopener">
+        <div class="album-bg album-bg-s">
+          <img class="s" src="https://i.scdn.co/image/ab67616d0000b273e44bcbfd5aa9f2300d2ee63e" alt="">
+        </div><div class="album-pattern"></div>
+        <div class="album-card-label">Album 002</div>
+        <div class="album-center-text"><span class="album-roman">II</span></div>
+        <div class="album-overlay"><span class="album-overlay-btn">▶ Listen on Spotify</span></div>
+        <div class="album-info"><div class="album-year">2020</div><div class="album-name">CTRL (Deluxe)</div><div class="album-tracks">17 Tracks · TDE / RCA Records</div></div>
+      </a>
+      <a class="album-card" href="https://open.spotify.com/album/07w0rG5TETcyihsEIZR3qG?si=WpwEflPMSlmy0KLJggSSUQ" target="_blank" rel="noopener">
+        <div class="album-bg album-bg-sos">
+          <img class="s" src="https://upload.wikimedia.org/wikipedia/en/2/2c/SZA_-_S.O.S.png" alt="SOS">
+        </div><div class="album-pattern"></div>
+        <div class="album-card-label">Album 003</div>
+        <div class="album-center-text"><span class="album-roman">III</span></div>
+        <div class="album-overlay"><span class="album-overlay-btn">▶ Listen on Spotify</span></div>
+        <div class="album-info"><div class="album-year">2022</div><div class="album-name">SOS</div><div class="album-tracks">23 Tracks · TDE / RCA Records</div></div>
+      </a>
+    </div>
+    <div class="tracks-section">
+      <div class="section-label">Fan Favourites</div>
+      <h2 class="section-title-sm">Top <em>Tracks</em></h2>
+      <div class="track-list">
+        <a class="track-item" href="https://open.spotify.com/track/0q7GRMJEdOnCFiQHJQXdiL" target="_blank" rel="noopener"><span class="track-num">01</span><div><div class="track-name">Kill Bill</div><div class="track-album">SOS · 2022</div></div><span class="track-duration">2:33</span></a>
+        <a class="track-item" href="https://open.spotify.com/track/0MoGKQJ4HFyKJGmGm6kLV8" target="_blank" rel="noopener"><span class="track-num">02</span><div><div class="track-name">Good Days</div><div class="track-album">Single · 2020</div></div><span class="track-duration">4:39</span></a>
+        <a class="track-item" href="https://open.spotify.com/track/4BoRxNiDDTCYkYMbF68rak" target="_blank" rel="noopener"><span class="track-num">03</span><div><div class="track-name">Snooze</div><div class="track-album">SOS · 2022</div></div><span class="track-duration">3:21</span></a>
+        <a class="track-item" href="https://open.spotify.com/track/2lmqSTBjSIvheMufAQkRlK" target="_blank" rel="noopener"><span class="track-num">04</span><div><div class="track-name">The Weekend</div><div class="track-album">CTRL · 2017</div></div><span class="track-duration">3:24</span></a>
+        <a class="track-item" href="https://open.spotify.com/track/4yzq6wKoCILMceKdKpgZJV" target="_blank" rel="noopener"><span class="track-num">05</span><div><div class="track-name">Shirt</div><div class="track-album">SOS · 2022</div></div><span class="track-duration">3:35</span></a>
+        <a class="track-item" href="https://open.spotify.com/track/7FIWzUmTHqGlfKyQmOHfaH" target="_blank" rel="noopener"><span class="track-num">06</span><div><div class="track-name">Drew Barrymore</div><div class="track-album">CTRL · 2017</div></div><span class="track-duration">4:17</span></a>
+        <a class="track-item" href="https://open.spotify.com/track/5PjdY0CKGZdEuoNab3yDmX" target="_blank" rel="noopener"><span class="track-num">07</span><div><div class="track-name">Garden (Say It Like Dat)</div><div class="track-album">CTRL · 2017</div></div><span class="track-duration">4:26</span></a>
+      </div>
+      <a class="stream-btn" href="https://open.spotify.com/artist/7tYKF4w9nC0nq9CsPZTHyP?si=SPHWRYuXRvSkb7uco_DGgQ" target="_blank" rel="noopener">▶ &nbsp;Stream All on Spotify</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ AWARDS ══ -->
+<div class="page" id="page-awards">
+  <div class="page-hero">
+    <div class="page-hero-label">Recognition</div>
+    <h1 class="page-hero-title">Awards &amp; <em>Accolades</em></h1>
+  </div>
+  <div class="awards-body">
+    <div class="awards-list">
+      <div class="award-item"><div class="award-year">2024</div><div><div class="award-name">Best R&amp;B Song</div><div class="award-org">Grammy Awards — "Shirt"</div></div><div class="award-icon">★</div></div>
+      <div class="award-item"><div class="award-year">2024</div><div><div class="award-name">Best Progressive R&amp;B Album</div><div class="award-org">Grammy Awards — SOS</div></div><div class="award-icon">★</div></div>
+      <div class="award-item"><div class="award-year">2023</div><div><div class="award-name">Top R&amp;B Artist</div><div class="award-org">Billboard Music Awards</div></div><div class="award-icon">◆</div></div>
+      <div class="award-item"><div class="award-year">2023</div><div><div class="award-name">Top R&amp;B Album</div><div class="award-org">Billboard Music Awards — SOS</div></div><div class="award-icon">◆</div></div>
+      <div class="award-item"><div class="award-year">2023</div><div><div class="award-name">Video of the Year Nominee</div><div class="award-org">MTV VMAs</div></div><div class="award-icon">○</div></div>
+      <div class="award-item"><div class="award-year">2023</div><div><div class="award-name">Best Music Video Nominee</div><div class="award-org">BET Awards</div></div><div class="award-icon">○</div></div>
+      <div class="award-item"><div class="award-year">2022</div><div><div class="award-name">Best New Artist Nominee</div><div class="award-org">Grammy Awards</div></div><div class="award-icon">○</div></div>
+      <div class="award-item"><div class="award-year">2018</div><div><div class="award-name">Best Urban Contemporary Album</div><div class="award-org">Grammy Nomination — CTRL</div></div><div class="award-icon">○</div></div>
+      <div class="award-item"><div class="award-year">2018</div><div><div class="award-name">Best R&amp;B Performance Nominee</div><div class="award-org">Grammy Awards — "The Weekend"</div></div><div class="award-icon">○</div></div>
+      <div class="award-item"><div class="award-year">2017</div><div><div class="award-name">Breakout Artist of the Year</div><div class="award-org">Soul Train Music Awards</div></div><div class="award-icon">◆</div></div>
+    </div>
+  </div>
+  <section class="quote-section">
+    <blockquote class="quote-text">"Every award is proof that someone heard what I was trying to say."</blockquote>
+    <p class="quote-source">SZA</p>
+  </section>
+</div>
+
+<!-- ══ CONNECT ══ -->
+<div class="page" id="page-connect">
+  <div class="page-hero">
+    <div class="page-hero-label">Socials &amp; Streaming</div>
+    <h1 class="page-hero-title">Follow the <em>Journey</em></h1>
+  </div>
+  <div class="connect-body">
+    <div>
+      <div class="section-label">Get Connected</div>
+      <h2 class="connect-title">Find SZA <em>Everywhere</em></h2>
+      <p class="connect-desc">Stream her music, follow her stories, watch her visuals, and stay up to date with everything Solána. Every platform, one artist.</p>
+    </div>
+    <div class="connect-links">
+      <a class="connect-link" href="https://open.spotify.com/artist/3tVQdUvClmAT7URs9V3rsp" target="_blank" rel="noopener"><div><div class="connect-link-label">Spotify</div><div class="connect-link-sub">35M+ monthly listeners</div></div><span class="connect-link-arrow">→</span></a>
+      <a class="connect-link" href="https://music.apple.com/us/artist/sza/389806818" target="_blank" rel="noopener"><div><div class="connect-link-label">Apple Music</div><div class="connect-link-sub">Stream all albums</div></div><span class="connect-link-arrow">→</span></a>
+      <a class="connect-link" href="https://www.youtube.com/@SZAVEVOOfficial" target="_blank" rel="noopener"><div><div class="connect-link-label">YouTube</div><div class="connect-link-sub">Official music videos</div></div><span class="connect-link-arrow">→</span></a>
+      <a class="connect-link" href="https://www.instagram.com/sza/" target="_blank" rel="noopener"><div><div class="connect-link-label">Instagram</div><div class="connect-link-sub">@sza</div></div><span class="connect-link-arrow">→</span></a>
+      <a class="connect-link" href="https://x.com/sza" target="_blank" rel="noopener"><div><div class="connect-link-label">X / Twitter</div><div class="connect-link-sub">@sza</div></div><span class="connect-link-arrow">→</span></a>
+      <a class="connect-link" href="https://www.tiktok.com/@sza" target="_blank" rel="noopener"><div><div class="connect-link-label">TikTok</div><div class="connect-link-sub">@sza</div></div><span class="connect-link-arrow">→</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo" onclick="showPage('home')">SZA — Solána Imani Rowe</div>
+  <div class="footer-copy">© 2026 Jasmine Rebias &nbsp;·&nbsp; BSIT 1-C</div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕ &nbsp;Close</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt=""/>
+  <span class="lightbox-cap" id="lightbox-cap"></span>
+</div>
+
+<script>
+  // Page navigation
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const navEl = document.getElementById('nav-' + id);
+    if (navEl) navEl.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.getElementById('nav-home').classList.add('active');
+
+  // Lightbox
+  function openLightbox(el) {
+    const img = el.querySelector('img');
+    const cap = el.querySelector('.g-item-caption');
+    if (!img || img.style.display === 'none') return;
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox-img').alt = img.alt;
+    document.getElementById('lightbox-cap').textContent = cap ? cap.textContent : '';
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Close lightbox on Escape
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+</body>
+</html>
