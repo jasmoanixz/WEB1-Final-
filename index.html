@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a class="nav-logo" onclick="showPage('home')">SZA / Portfolio</a>
   <ul class="nav-links">
@@ -21,12 +20,8 @@
   </ul>
 </nav>
 
-<!-- ══════════════════════
-     HOME PAGE
-══════════════════════ -->
 <div class="page active" id="page-home">
 
-  <!-- HERO with image -->
   <section class="hero">
     <div class="hero-left">
       <p class="hero-tag">Singer &nbsp;·&nbsp; Songwriter &nbsp;·&nbsp; R&amp;B / Neo-Soul</p>
@@ -39,7 +34,7 @@
     </div>
 
     <div class="hero-right">
-      <!-- Real public photo via Wikimedia Commons -->
+ 
       <img
         class="hero-img"
         src="https://i.pinimg.com/originals/6d/fb/58/6dfb58da5daf8c287a02b50af52b3256.gif"
@@ -55,7 +50,7 @@
     <div class="hero-scroll">Scroll to explore</div>
   </section>
 
-  <!-- Quick nav strip -->
+
   <div class="home-strip">
     <div class="strip-item" onclick="showPage('about')">
       <span class="strip-num">01</span>
@@ -79,7 +74,7 @@
     </div>
   </div>
 
-  <!-- Featured / Who is SZA -->
+
   <div class="home-featured">
     <div>
       <div class="feat-label">Who is SZA</div>
@@ -118,7 +113,6 @@
     </div>
   </div>
 
-  <!-- Latest Release Banner -->
   <div class="release-banner">
     <div class="release-left">
       <div class="release-cover">
@@ -136,7 +130,7 @@
     </div>
   </div>
 
-  <!-- Gallery Section -->
+
   <section class="gallery-section">
     <div class="gallery-header">
       <div>
@@ -223,7 +217,6 @@
     </div>
   </section>
 
-  <!-- Featured Tracks on Home -->
   <div class="home-tracks">
     <div class="ht-inner">
       <div class="ht-header">
@@ -283,7 +276,6 @@
     </div>
   </div>
 
-  <!-- Press Quotes -->
   <section class="press-section">
     <div class="feat-label">Critical Acclaim</div>
     <h2 class="feat-title" style="margin-bottom:0">What the <em>World</em> Says</h2>
@@ -308,9 +300,8 @@
     <p class="quote-source">SZA — On her artistry</p>
   </section>
 
-</div><!-- end home -->
+</div>
 
-<!-- ══ ABOUT ══ -->
 <div class="page" id="page-about">
   <div class="page-hero">
     <div class="page-hero-label">The Artist</div>
@@ -356,7 +347,7 @@
   </section>
 </div>
 
-<!-- ══ MUSIC ══ -->
+
 <div class="page" id="page-music">
   <div class="page-hero">
     <div class="page-hero-label">Discography</div>
@@ -409,7 +400,6 @@
   </div>
 </div>
 
-<!-- ══ AWARDS ══ -->
 <div class="page" id="page-awards">
   <div class="page-hero">
     <div class="page-hero-label">Recognition</div>
@@ -435,7 +425,6 @@
   </section>
 </div>
 
-<!-- ══ CONNECT ══ -->
 <div class="page" id="page-connect">
   <div class="page-hero">
     <div class="page-hero-label">Socials &amp; Streaming</div>
@@ -458,13 +447,13 @@
   </div>
 </div>
 
-<!-- FOOTER -->
+
 <footer>
   <div class="footer-logo" onclick="showPage('home')">SZA — Solána Imani Rowe</div>
   <div class="footer-copy">© 2026 Jasmine Rebias &nbsp;·&nbsp; BSIT 1-C</div>
 </footer>
 
-<!-- LIGHTBOX -->
+
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <button class="lightbox-close" onclick="closeLightbox()">✕ &nbsp;Close</button>
   <img class="lightbox-img" id="lightbox-img" src="" alt=""/>
@@ -472,7 +461,7 @@
 </div>
 
 <script>
-  // Page navigation
+
   function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + id).classList.add('active');
@@ -484,7 +473,6 @@
 
   document.getElementById('nav-home').classList.add('active');
 
-  // Lightbox
   function openLightbox(el) {
     const img = el.querySelector('img');
     const cap = el.querySelector('.g-item-caption');
@@ -501,7 +489,6 @@
     document.body.style.overflow = '';
   }
 
-  // Close lightbox on Escape
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
 
